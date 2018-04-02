@@ -21,7 +21,7 @@ for bucket in buckets['Buckets']:
             for file in bucketFiles:
                 file_name,extension = splitext(file.key)
                 if extension in targetExtensions:
-                    print("PublicBucket:", bucket['name'], ", file:", file.key)
+                    print("PublicBucket:", bucket['Name'], ", file:", file.key)
     #Inspect private bucket file permissions 1 by 1
     if publicBucket==False:
         print("Inspecting file permissions on ",bucket['Name'])
